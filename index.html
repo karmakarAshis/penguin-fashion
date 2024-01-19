@@ -6,17 +6,55 @@
     <meta name="viewport" content="width=p, initial-scale=1.0">
     <title>Penguin Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        .font-bebas {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-
+    <header class="bg-amber-100 px-4 md:px-32 py-20">
+        <!-- nav section -->
+        <nav class="flex justify-between items-center">
+            <img class="h-8" src="icons/logo.png" alt="">
+            <ul class="flex flex-col md:flex-row space-x-12 text-gray-700">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </nav>
+        <!-- banner section -->
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="space-y-3">
+                <h1 class="text-7xl uppercase font-bebas"><span class="text-amber-600">Be the Penguins</span>
+                    <br>
+                    <span class="text-blue-950">of Winter</span>
+                </h1>
+                <p>Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry.</p>
+                <button class="bg-lime-600 py-4 px-9 rounded-xl uppercase text-white font-medium"><svg
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 inline">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                    </svg>
+                    BUY NOW</button>
+            </div>
+            <div>
+                <img src="images/model.png" alt="">
+            </div>
+        </div>
     </header>
-    <main>
-
+    <main class="max-w-7xl mx-auto">
+        <section class="py-12">
+            <h2 class="text-5xl text-blue-950 font-bebas capitalize">W0Man Jacket</h2>
+        </section>
     </main>
-    <footer>
-        
-    </footer>
 </body>
 
 </html>
